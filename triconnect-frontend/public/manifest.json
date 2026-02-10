@@ -1,0 +1,16 @@
+{
+  "name": "TriConnect",
+  "short_name": "TriConnect",
+  "description": "Centralized Event Aggregator & Notification Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3498db",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

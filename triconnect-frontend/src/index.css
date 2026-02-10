@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --college-color: #9b59b6;
+  --industry-color: #e74c3c;
+  --government-color: #27ae60;
+  --light-bg: #ecf0f1;
+  --border-radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Light mode colors */
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+  --card-bg: #f9f9f9;
+}
+
+/* Dark mode styles */
+html.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --border-color: #333333;
+  --card-bg: #2d2d2d;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Background for authenticated user-side pages */
+.user-background {
+  min-height: 100vh;
+  background-image: url('../public/images/user-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.user-background > * {
+  position: relative;
+  z-index: 1;
+}
+
+.user-background::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.25); /* subtle overlay for readability */
+  z-index: 0;
+}
